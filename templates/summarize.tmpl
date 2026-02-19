@@ -1,0 +1,15 @@
+---
+name: summarize
+description: Summarize a document with configurable length
+required_vars:
+  - document
+  - max_words
+model_hint: gpt-4
+---
+{{ template "system_default" }}
+
+Summarize the following document in {{ .max_words }} words or fewer.
+
+{{ .document | truncate 8000 }}
+
+{{ template "json_format" }}

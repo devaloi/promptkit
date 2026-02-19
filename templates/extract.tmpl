@@ -1,0 +1,16 @@
+---
+name: extract
+description: Extract entities from text
+required_vars:
+  - text
+  - entity_type
+model_hint: gpt-4
+---
+{{ template "system_default" }}
+
+Extract all {{ .entity_type }} entities from the following text.
+
+Text:
+{{ .text | truncate 6000 }}
+
+Return the results as a JSON array of objects, each with a "name" and "type" field.

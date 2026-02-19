@@ -1,0 +1,16 @@
+---
+name: classify
+description: Classify text into provided categories
+required_vars:
+  - text
+  - categories
+model_hint: gpt-4
+---
+{{ template "system_default" }}
+
+Classify the following text into one of these categories: {{ .categories }}
+
+Text:
+{{ .text | truncate 4000 }}
+
+{{ template "json_format" }}

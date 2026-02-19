@@ -1,0 +1,13 @@
+name: summarize-and-classify
+steps:
+  - template: summarize
+    vars:
+      document: "{{ .input_document }}"
+      max_words: "100"
+    output_var: summary
+
+  - template: classify
+    vars:
+      text: "{{ .summary }}"
+      categories: "{{ .categories }}"
+    output_var: classification
