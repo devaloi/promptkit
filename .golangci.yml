@@ -1,0 +1,22 @@
+version: "2"
+
+linters:
+  default: standard
+  enable:
+    - errorlint
+    - gocritic
+    - revive
+    - unconvert
+    - unparam
+
+formatters:
+  enable:
+    - gofumpt
+
+output:
+  sort-order:
+    - file
+
+issues:
+  max-issues-per-linter: 0
+  max-same-issues: 0
