@@ -1,5 +1,7 @@
 # promptkit
 
+[![CI](https://github.com/devaloi/promptkit/actions/workflows/ci.yml/badge.svg)](https://github.com/devaloi/promptkit/actions/workflows/ci.yml)
+
 [![Go](https://img.shields.io/badge/Go-1.26-00ADD8?logo=go)](https://go.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Lint](https://img.shields.io/badge/lint-golangci--lint-blue)](https://golangci-lint.run)
