@@ -185,3 +185,7 @@ make cover      # Generate coverage report
 ## License
 
 [MIT](LICENSE)
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md). PRs welcome — run `make all` before submitting.
